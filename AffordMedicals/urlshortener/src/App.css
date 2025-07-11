@@ -1,0 +1,199 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #a7f3d0 50%, #60a5fa 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.url-shortener-container {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdf4 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(56,189,248,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 520px;
+  margin: 48px auto;
+  text-align: center;
+}
+
+.url-shortener-container h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  color: #2563eb;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.url-entry {
+  background: linear-gradient(90deg, #e0e7ff 0%, #a7f3d0 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(56,189,248,0.08);
+  padding: 1.2rem 1rem 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.url-entry input[type="text"] {
+  border: 2px solid #60a5fa;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1.08rem;
+  width: 38%;
+  margin-bottom: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f0fdf4;
+  box-shadow: 0 1px 6px rgba(56,189,248,0.07);
+}
+.url-entry input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #a7f3d0;
+}
+
+.url-entry input[type="text"]:nth-child(2) {
+  background: #bae6fd;
+  border-color: #2563eb;
+}
+.url-entry input[type="text"]:nth-child(3) {
+  background: #bbf7d0;
+  border-color: #059669;
+}
+
+
+.url-entry button {
+  background: #f59e42;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.url-entry button:disabled {
+  background: #fde68a;
+  color: #a16207;
+  cursor: not-allowed;
+}
+.url-entry button:hover:not(:disabled) {
+  background: #ea580c;
+}
+
+.short-url-result {
+  margin-top: 1.2rem;
+  font-size: 1.08rem;
+  background: linear-gradient(90deg, #bae6fd 0%, #bbf7d0 100%);
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 1px 8px rgba(56,189,248,0.08);
+}
+
+
+.url-shortener-container button[type="button"] {
+  background: #bae6fd;
+  color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.url-shortener-container button[type="button"]:hover {
+  background: #60a5fa;
+}
+
+
+.url-shortener-container button[type="submit"],
+.url-shortener-container > button:not([type]) {
+  background: linear-gradient(90deg, #2563eb 0%, #059669 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.url-shortener-container button[type="submit"]:hover,
+.url-shortener-container > button:not([type]):hover {
+  background: linear-gradient(90deg, #059669 0%, #2563eb 100%);
+}
+
+
+.url-shortener-container p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.url-shortener-container p[style*="color: red"] {
+  color: #ef4444 !important;
+  font-weight: 500;
+}
+
+
+.url-shortener-container a {
+  color: #059669;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-all;
+}
+.url-shortener-container a:hover {
+  text-decoration: underline;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
